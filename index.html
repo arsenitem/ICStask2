@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Задание 2</title>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="popup">
+             <div id="center"><span class="close" onclick="CloseMark()">&times;</span><P id="m5" class="mark">5</P><P id="m4"  class="mark">4</P><P id="m3"  class="mark">3</P><P id="m2"  class="mark">2</P><P id="m1"  class="mark">1</P></div></div>
+			
+    <div class="header" >Расположение парт в аудитории</div>
+
+    <div class="content">
+    	<div id=classroom>
+    		 <div class="col-1-3" >
+    		 	<div class="empty"></div>		
+    		    <div class="empty"></div>
+    		 	<div class="empty"><div class="desk" draggable="true" id='desk11' ondragstart="Dragging(event)">
+    		 		<div class="student_left"><img src="source/Male User_100px.png" class="student_img" width="100px" height="100px" draggable="false" onclick="SetMark()"></div>
+    		 		<div class="student_right"><img src="source/Male User_100px.png" class="student_img" width="100px" height="100px" draggable="false" onclick="SetMark()"></div>
+    		 	</div></div>
+    		 	<div class="empty"><div class="desk" draggable="true" id='desk12' ondragstart="Dragging(event)"><div class="student_left"><img src="source/Male User_100px.png" class="student_img" width="100px" height="100px" draggable="false" onclick="SetMark()"></div>
+    		 		<div class="student_right"><img src="source/Male User_100px.png" class="student_img" width="100px" height="100px" draggable="false" onclick="SetMark()"></div></div></div>
+    		 	<div class="empty"><div class="desk" draggable="true" id='desk13' ondragstart="Dragging(event)"><div class="student_left"><img src="source/Male User_100px.png" class="student_img" width="100px" height="100px" draggable="false" onclick="SetMark()"></div>
+    		 		<div class="student_right"><img src="source/Male User_100px.png" class="student_img" width="100px" height="100px" draggable="false" onclick="SetMark()"></div></div></div>
+    		 	<div class="empty"><div class="desk" draggable="true" id='desk14' ondragstart="Dragging(event)"><div class="student_left"><img src="source/Male User_100px.png" class="student_img" width="100px" height="100px" draggable="false" onclick="SetMark()"></div>
+    		 		<div class="student_right"><img src="source/Male User_100px.png" class="student_img" width="100px" height="100px" draggable="false" onclick="SetMark()"></div></div></div>
+    		 	<div class="empty"><div class="desk" draggable="true" id='desk15' ondragstart="Dragging(event)"><div class="student_right"><img src="source/Male User_100px.png" class="student_img" width="100px" height="100px" draggable="false" onclick="SetMark()"></div></div></div>	
+    		 	<div class="empty"></div>
+    		 </div>
+    		 <div class="col-1-3">
+    		 	<div class="empty"></div>
+    		 	<div class="empty"></div>
+    		 	<div class="empty"></div>
+    		 	<div class="empty"><div class="desk" draggable="true" id='desk21' ondragstart="Dragging(event)"><div class="student_right"><img src="source/Male User_100px.png" class="student_img" width="100px" height="100px" draggable="false" onclick="SetMark()"></div></div></div>
+    		 	<div class="empty"><div class="desk" draggable="true" id='desk22' ondragstart="Dragging(event)"><div class="student_left"><img src="source/Male User_100px.png" class="student_img" width="100px" height="100px" draggable="false" onclick="SetMark()"></div>
+    		 		<div class="student_right"><img src="source/Male User_100px.png" class="student_img" width="100px" height="100px" draggable="false" onclick="SetMark()"></div></div></div>
+    		 	<div class="empty"><div class="desk" draggable="true" id='desk23' ondragstart="Dragging(event)"><div class="student_left"><img src="source/Male User_100px.png" class="student_img" width="100px" height="100px" draggable="false" onclick="SetMark()"></div>
+    		 		<div class="student_right"><img src="source/Male User_100px.png" class="student_img" width="100px" height="100px" draggable="false" onclick="SetMark()"></div></div></div>
+    		 	<div class="empty"><div class="desk" draggable="true" id='desk24' ondragstart="Dragging(event)"><div class="student_left"><img src="source/Male User_100px.png" class="student_img" width="100px" height="100px" draggable="false" onclick="SetMark()"></div></div></div>
+    		 	<div class="empty"><div class="desk" draggable="true" id='desk25' ondragstart="Dragging(event)"></div></div>
+    		 </div>
+    		  <div class="col-1-3">
+    		  	<div class="empty"></div>
+    		 	<div class="empty"></div>
+    		 	<div class="empty"><div class="desk" draggable="true" id='desk31' ondragstart="Dragging(event)"><div class="student_left"><img src="source/Male User_100px.png" class="student_img" width="100px" height="100px" draggable="false" onclick="SetMark()"></div>
+    		 		<div class="student_right"><img src="source/Male User_100px.png" class="student_img" width="100px" height="100px" draggable="false" onclick="SetMark()"></div></div></div>
+    		 	<div class="empty"><div class="desk" draggable="true" id='desk32' ondragstart="Dragging(event)"></div></div>
+    		 	<div class="empty"><div class="desk" draggable="true" id='desk33' ondragstart="Dragging(event)"><div class="student_right"><img src="source/Male User_100px.png" class="student_img" width="100px" height="100px" draggable="false" onclick="SetMark()"></div></div></div>
+    		 	<div class="empty"><div class="desk" draggable="true" id='desk34' ondragstart="Dragging(event)"><div class="student_right"><img src="source/Male User_100px.png" class="student_img" width="100px" height="100px" draggable="false" onclick="SetMark()"></div></div></div>
+    		 	<div class="empty"><div class="desk" draggable="true" id='desk35' ondragstart="Dragging(event)"><div class="student_left"><img src="source/Male User_100px.png" class="student_img" width="100px" height="100px" draggable="false" onclick="SetMark()"></div>
+    		 		<div class="student_right"><img src="source/Male User_100px.png" class="student_img" width="100px" height="100px" draggable="false" onclick="SetMark()"></div></div></div>
+    		 	<div class="empty"></div>
+    		  </div>
+
+    	</div>
+    	<div id=info>
+    	<p id=num>Аудитория номер 1</p>
+    	<p id=num>Преподаватль: Морозенко Валерий Викторович</p>
+    	<p id=num>Предмет: Дискретная математика</p>
+
+    	</div>
+
+    </div>
+
+
+
+  <div class="footer">© — Тестовое задание 2</div>
+  <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
